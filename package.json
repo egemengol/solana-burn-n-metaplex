@@ -4,15 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "listnfts": "npx tsc && node ./build/index.js list"
+    "listnfts": "npx tsc && node ./build/index.js list",
+    "burn": "npx tsc && node ./build/index.js burn"
   },
   "dependencies": {
-    "@metaplex-foundation/mpl-core": "^0.0.4",
     "@metaplex-foundation/mpl-token-metadata": "^1.2.5",
-    "@metaplex/js": "^4.12.0",
     "@solana/spl-token": "^0.2.0",
     "@solana/web3.js": "^1.36.0",
-    "@types/yargs": "^17.0.9",
     "bs58": "^5.0.0",
     "commander": "^9.0.0",
     "dotenv": "^16.0.0"
