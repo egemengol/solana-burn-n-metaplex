@@ -29,12 +29,11 @@ const doesQualify = async (
     const data = await response.json();
     const attributes = data.attributes;
 
-    let res = false;
+    let res = true;
 
     for (let attribute of attributes) {
       if (attribute.trait_type == "Texture") {
-        console.log("name: ", data.name);
-        res = true;
+        res = false;
       }
     }
 
